@@ -1,8 +1,260 @@
 <resources>
     <string name="app_name">Learning Languages</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="appTitle">Learning Languages</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Greetings and introductions -->
+    <!-- Hello -->
+    <string name="english_hello">Hello</string>
+    <string name="spanish_hello">Hola</string>
+    <string name="german_hello">Hallo</string>
+    <string name="french_hello">Bonjour</string>
+
+    <!-- Goodbye -->
+    <string name="english_goodbye">Goodbye</string>
+    <string name="spanish_goodbye">Adiós</string>
+    <string name="german_goodbye">Auf Wiedersehen</string>
+    <string name="french_goodbye">Au revoir</string>
+
+    <!-- Please -->
+    <string name="english_please">Please</string>
+    <string name="spanish_please">Por favor</string>
+    <string name="german_please">Bitte</string>
+    <string name="french_please">S'il vous plaît</string>
+
+    <!-- Thank you -->
+    <string name="english_thank_you">Thank you</string>
+    <string name="spanish_thank_you">Gracias</string>
+    <string name="german_thank_you">Danke</string>
+    <string name="french_thank_you">Merci</string>
+
+    <!-- Yes -->
+    <string name="english_yes">Yes</string>
+    <string name="spanish_yes">Sí</string>
+    <string name="german_yes">Ja</string>
+    <string name="french_yes">Oui</string>
+
+    <!-- No -->
+    <string name="english_no">No</string>
+    <string name="spanish_no">No</string>
+    <string name="german_no">Nein</string>
+    <string name="french_no">Non</string>
+
+    <!-- How are you? -->
+    <string name="english_how">How are you?</string>
+    <string name="spanish_how">¿Cómo estás?</string>
+    <string name="german_how">Wie geht's?</string>
+    <string name="french_how">Comment ça va?</string>
+
+    <!-- Sorry -->
+    <string name="english_sorry">Sorry</string>
+    <string name="spanish_sorry">Lo siento</string>
+    <string name="german_sorry">Es tut mir leid</string>
+    <string name="french_sorry">Désolé</string>
+
+    <!-- What is your name? -->
+    <string name="english_your_name">What is your name?</string>
+    <string name="spanish_your_name">¿Cómo te llamas?</string>
+    <string name="german_your_name">Wie heißt du?</string>
+    <string name="french_your_name">Comment t'appelles-tu?</string>
+
+    <!-- My name is -->
+    <string name="english_my_name">My name is</string>
+    <string name="spanish_my_name">Me llamo</string>
+    <string name="german_my_name">Ich heiße</string>
+    <string name="french_my_name">Je m'appelle</string>
+
+
+
+    <!-- Numbers -->
+    <!-- One -->
+    <string name="english_one">One</string>
+    <string name="spanish_one">Uno</string>
+    <string name="german_one">Eins</string>
+    <string name="french_one">Un</string>
+
+    <!-- Two -->
+    <string name="english_two">Two</string>
+    <string name="spanish_two">Dos</string>
+    <string name="german_two">Zwei</string>
+    <string name="french_two">Deux</string>
+
+    <!-- Three -->
+    <string name="english_three">Three</string>
+    <string name="spanish_three">Tres</string>
+    <string name="german_three">Drei</string>
+    <string name="french_three">Trois</string>
+
+    <!-- Four -->
+    <string name="english_four">Four</string>
+    <string name="spanish_four">Cuatro</string>
+    <string name="german_four">Vier</string>
+    <string name="french_four">Quatre</string>
+
+    <!-- Five -->
+    <string name="english_five">Five</string>
+    <string name="spanish_five">Cinco</string>
+    <string name="german_five">Fünf</string>
+    <string name="french_five">Cinq</string>
+
+    <!-- Six -->
+    <string name="english_six">Six</string>
+    <string name="spanish_six">Seis</string>
+    <string name="german_six">Sechs</string>
+    <string name="french_six">Six</string>
+
+    <!-- Seven -->
+    <string name="english_seven">Seven</string>
+    <string name="spanish_seven">Siete</string>
+    <string name="german_seven">Sieben</string>
+    <string name="french_seven">Sept</string>
+
+    <!-- Eight -->
+    <string name="english_eight">Eight</string>
+    <string name="spanish_eight">Ocho</string>
+    <string name="german_eight">Acht</string>
+    <string name="french_eight">Huit</string>
+
+    <!-- Nine -->
+    <string name="english_nine">Nine</string>
+    <string name="spanish_nine">Nueve</string>
+    <string name="german_nine">Neun</string>
+    <string name="french_nine">Neuf</string>
+
+    <!-- Ten -->
+    <string name="english_ten">Ten</string>
+    <string name="spanish_ten">Diez</string>
+    <string name="german_ten">Zehn</string>
+    <string name="french_ten">Dix</string>
+
+
+
+
+    <!-- Food -->
+    <!-- Apple -->
+    <string name="english_apple">Apple</string>
+    <string name="spanish_apple">Manzana</string>
+    <string name="german_apple">Apfel</string>
+    <string name="french_apple">Pomme</string>
+
+    <!-- Bread -->
+    <string name="english_bread">Bread</string>
+    <string name="spanish_bread">Pan</string>
+    <string name="german_bread">Brot</string>
+    <string name="french_bread">Pain</string>
+
+    <!-- Cheese -->
+    <string name="english_cheese">Cheese</string>
+    <string name="spanish_cheese">Queso</string>
+    <string name="german_cheese">Käse</string>
+    <string name="french_cheese">Fromage</string>
+
+    <!-- Chicken -->
+    <string name="english_chicken">Chicken</string>
+    <string name="spanish_chicken">Pollo</string>
+    <string name="german_chicken">Hähnchen</string>
+    <string name="french_chicken">Poulet</string>
+
+    <!-- Fish -->
+    <string name="english_fish">Fish</string>
+    <string name="spanish_fish">Pescado</string>
+    <string name="german_fish">Fisch</string>
+    <string name="french_fish">Poisson</string>
+
+    <!-- Meat -->
+    <string name="english_meat">Meat</string>
+    <string name="spanish_meat">Carne</string>
+    <string name="german_meat">Fleisch</string>
+    <string name="french_meat">Viande</string>
+
+    <!-- Milk -->
+    <string name="english_milk">Milk</string>
+    <string name="spanish_milk">Leche</string>
+    <string name="german_milk">Milch</string>
+    <string name="french_milk">Lait</string>
+
+    <!-- Orange -->
+    <string name="english_orange">Orange</string>
+    <string name="spanish_orange">Naranja</string>
+    <string name="german_orange">Orange</string>
+    <string name="french_orange">Orange</string>
+
+    <!-- Rice -->
+    <string name="english_rice">Rice</string>
+    <string name="spanish_rice">Arroz</string>
+    <string name="german_rice">Reis</string>
+    <string name="french_rice">Riz</string>
+
+    <!-- Water -->
+    <string name="english_water">Water</string>
+    <string name="spanish_water">Agua</string>
+    <string name="german_water">Wasser</string>
+    <string name="french_water">Eau</string>
+
+
+
+
+    <!-- Vehicles -->
+    <!-- Bicycle -->
+    <string name="english_bicycle">Bicycle</string>
+    <string name="spanish_bicycle">Bicicleta</string>
+    <string name="german_bicycle">Fahrrad</string>
+    <string name="french_bicycle">Vélo</string>
+
+    <!-- Car -->
+    <string name="english_car">Car</string>
+    <string name="spanish_car">Coche</string>
+    <string name="german_car">Auto</string>
+    <string name="french_car">Voiture</string>
+
+    <!-- Bus -->
+    <string name="english_bus">Bus</string>
+    <string name="spanish_bus">Autobús</string>
+    <string name="german_bus">Bus</string>
+    <string name="french_bus">Bus</string>
+
+    <!-- Motorcycle -->
+    <string name="english_motorcycle">Motorcycle</string>
+    <string name="spanish_motorcycle">Motocicleta</string>
+    <string name="german_motorcycle">Motorrad</string>
+    <string name="french_motorcycle">Moto</string>
+
+    <!-- Airplane -->
+    <string name="english_airplane">Airplane</string>
+    <string name="spanish_airplane">Avión</string>
+    <string name="german_airplane">Flugzeug</string>
+    <string name="french_airplane">Avion</string>
+
+    <!-- Train -->
+    <string name="english_train">Train</string>
+    <string name="spanish_train">Tren</string>
+    <string name="german_train">Zug</string>
+    <string name="french_train">Train</string>
+
+    <!-- Boat -->
+    <string name="english_boat">Boat</string>
+    <string name="spanish_boat">Barco</string>
+    <string name="german_boat">Boot</string>
+    <string name="french_boat">Bateau</string>
+
+    <!-- Truck -->
+    <string name="english_truck">Truck</string>
+    <string name="spanish_truck">Camión</string>
+    <string name="german_truck">Lastwagen</string>
+    <string name="french_truck">Camion</string>
+
+    <!-- Helicopter -->
+    <string name="english_helicopter">Helicopter</string>
+    <string name="spanish_helicopter">Helicóptero</string>
+    <string name="german_helicopter">Hubschrauber</string>
+    <string name="french_helicopter">Hélicoptère</string>
+
+    <!-- Subway -->
+    <string name="english_subway">Subway</string>
+    <string name="spanish_subway">Metro</string>
+    <string name="german_subway">U-Bahn</string>
+    <string name="french_subway">Métro</string>
+
 
 </resources>
