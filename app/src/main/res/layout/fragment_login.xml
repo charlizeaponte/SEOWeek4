@@ -15,12 +15,11 @@
 
 
     <ImageView
-        android:layout_width="250dp"
+        android:layout_width="254dp"
         android:layout_height="208dp"
         android:layout_gravity="center_horizontal"
         android:paddingBottom="16dp"
         android:src="@drawable/translate" />
-
 
     <EditText
         android:id="@+id/username"
