@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628689031785",
+    "project_id": "language-learning-app-c6ec2",
+    "storage_bucket": "language-learning-app-c6ec2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628689031785:android:68316cea43cb201cdd88f8",
+        "android_client_info": {
+          "package_name": "edu.quinnipiac.seoweek4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJI038io8iz_8q2aHMcesrNhBLqmuHntg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
