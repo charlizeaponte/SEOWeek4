@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -55,9 +57,9 @@ class loginFragment : Fragment() {
 
                 withContext(Dispatchers.Main) {
                     if (result != null) {
-
+                        findNavController().navigate(R.id.dashboardFragment)
                     } else {
-                        // Login failed
+                        Toast.makeText(requireContext(), "Login failed", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
