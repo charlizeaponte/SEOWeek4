@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 
-class UserData(context: Context) {
+object UserData {
     val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "progress")
 
     suspend fun setProgress(context: Context, subject: Int, progress: Double) {

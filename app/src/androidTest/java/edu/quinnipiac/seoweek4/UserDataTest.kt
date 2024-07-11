@@ -8,7 +8,7 @@ import org.junit.Test
 import kotlinx.coroutines.test.runTest
 
 class UserDataTest {
-    private val userData = UserData(ApplicationProvider.getApplicationContext())
+    private val userData = UserData
 
     @Test
     fun testSetAndGetProgress() = runTest {

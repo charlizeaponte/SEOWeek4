@@ -46,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Subject 1" />
+        android:text="Best Quiz Score:" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,99 +73,99 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/label2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Subject 2" />
+<!--    <TextView-->
+<!--        android:id="@+id/label2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Subject 2" />-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="41dp"
-        android:orientation="horizontal">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="41dp"-->
+<!--        android:orientation="horizontal">-->
 
-        <TextView
-            android:id="@+id/sub2_progress"
-            android:layout_width="83dp"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:text="TextView"
-            android:textAlignment="center" />
+<!--        <TextView-->
+<!--            android:id="@+id/sub2_progress"-->
+<!--            android:layout_width="83dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="TextView"-->
+<!--            android:textAlignment="center" />-->
 
-        <ProgressBar
-            android:id="@+id/progressBar2"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="315dp"
-            android:layout_height="match_parent"
-            android:maxWidth="10dp"
-            android:maxHeight="30dp"
-            android:minWidth="10dp"
-            android:minHeight="30dp" />
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressBar2"-->
+<!--            style="?android:attr/progressBarStyleHorizontal"-->
+<!--            android:layout_width="315dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:maxWidth="10dp"-->
+<!--            android:maxHeight="30dp"-->
+<!--            android:minWidth="10dp"-->
+<!--            android:minHeight="30dp" />-->
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
-    <TextView
-        android:id="@+id/label3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Subject 3" />
+<!--    <TextView-->
+<!--        android:id="@+id/label3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Subject 3" />-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="41dp"
-        android:orientation="horizontal">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="41dp"-->
+<!--        android:orientation="horizontal">-->
 
-        <TextView
-            android:id="@+id/sub3_progress"
-            android:layout_width="83dp"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:text="TextView"
-            android:textAlignment="center" />
+<!--        <TextView-->
+<!--            android:id="@+id/sub3_progress"-->
+<!--            android:layout_width="83dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="TextView"-->
+<!--            android:textAlignment="center" />-->
 
-        <ProgressBar
-            android:id="@+id/progressBar3"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="315dp"
-            android:layout_height="match_parent"
-            android:maxWidth="10dp"
-            android:maxHeight="30dp"
-            android:minWidth="10dp"
-            android:minHeight="30dp" />
-    </LinearLayout>
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressBar3"-->
+<!--            style="?android:attr/progressBarStyleHorizontal"-->
+<!--            android:layout_width="315dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:maxWidth="10dp"-->
+<!--            android:maxHeight="30dp"-->
+<!--            android:minWidth="10dp"-->
+<!--            android:minHeight="30dp" />-->
+<!--    </LinearLayout>-->
 
-    <TextView
-        android:id="@+id/label4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Subject 4" />
+<!--    <TextView-->
+<!--        android:id="@+id/label4"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Subject 4" />-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="41dp"
-        android:orientation="horizontal">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="41dp"-->
+<!--        android:orientation="horizontal">-->
 
-        <TextView
-            android:id="@+id/sub4_progress"
-            android:layout_width="83dp"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:text="TextView"
-            android:textAlignment="center" />
+<!--        <TextView-->
+<!--            android:id="@+id/sub4_progress"-->
+<!--            android:layout_width="83dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="TextView"-->
+<!--            android:textAlignment="center" />-->
 
-        <ProgressBar
-            android:id="@+id/progressBar4"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="315dp"
-            android:layout_height="match_parent"
-            android:maxWidth="10dp"
-            android:maxHeight="30dp"
-            android:minWidth="10dp"
-            android:minHeight="30dp" />
-    </LinearLayout>
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressBar4"-->
+<!--            style="?android:attr/progressBarStyleHorizontal"-->
+<!--            android:layout_width="315dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:maxWidth="10dp"-->
+<!--            android:maxHeight="30dp"-->
+<!--            android:minWidth="10dp"-->
+<!--            android:minHeight="30dp" />-->
+<!--    </LinearLayout>-->
 
 </LinearLayout>
 

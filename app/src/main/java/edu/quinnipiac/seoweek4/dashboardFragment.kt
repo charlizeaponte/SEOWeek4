@@ -28,32 +28,32 @@ class dashboardFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val userData = UserData(requireContext())
+        val userData = UserData
         lifecycleScope.launch {
             val sub1 = userData.getProgress(requireContext(), 1)
-            val sub2 = userData.getProgress(requireContext(), 2)
-            val sub3 = userData.getProgress(requireContext(), 3)
-            val sub4 = userData.getProgress(requireContext(), 4)
+//            val sub2 = userData.getProgress(requireContext(), 2)
+//            val sub3 = userData.getProgress(requireContext(), 3)
+//            val sub4 = userData.getProgress(requireContext(), 4)
 
             val text1: TextView = view.findViewById(R.id.sub1_progress)
-            val text2: TextView = view.findViewById(R.id.sub2_progress)
-            val text3: TextView = view.findViewById(R.id.sub3_progress)
-            val text4: TextView = view.findViewById(R.id.sub4_progress)
+//            val text2: TextView = view.findViewById(R.id.sub2_progress)
+//            val text3: TextView = view.findViewById(R.id.sub3_progress)
+//            val text4: TextView = view.findViewById(R.id.sub4_progress)
 
             val progress1: ProgressBar = view.findViewById(R.id.progressBar1)
-            val progress2: ProgressBar = view.findViewById(R.id.progressBar2)
-            val progress3: ProgressBar = view.findViewById(R.id.progressBar3)
-            val progress4: ProgressBar = view.findViewById(R.id.progressBar4)
+//            val progress2: ProgressBar = view.findViewById(R.id.progressBar2)
+//            val progress3: ProgressBar = view.findViewById(R.id.progressBar3)
+//            val progress4: ProgressBar = view.findViewById(R.id.progressBar4)
 
             text1.text = (sub1 * 100).toString() + "%"
-            text2.text = (sub2 * 100).toString() + "%"
-            text3.text = (sub3 * 100).toString() + "%"
-            text4.text = (sub4 * 100).toString() + "%"
+//            text2.text = (sub2 * 100).toString() + "%"
+//            text3.text = (sub3 * 100).toString() + "%"
+//            text4.text = (sub4 * 100).toString() + "%"
 
             progress1.progress = (sub1 * 100).toInt()
-            progress2.progress = (sub2 * 100).toInt()
-            progress3.progress = (sub3 * 100).toInt()
-            progress4.progress = (sub4 * 100).toInt()
+//            progress2.progress = (sub2 * 100).toInt()
+//            progress3.progress = (sub3 * 100).toInt()
+//            progress4.progress = (sub4 * 100).toInt()
 
         }
     }
