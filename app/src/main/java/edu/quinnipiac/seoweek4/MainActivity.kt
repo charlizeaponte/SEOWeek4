@@ -1,18 +1,19 @@
 package edu.quinnipiac.seoweek4
 
-import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.NavOptions
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.onNavDestinationSelected
+import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 import edu.quinnipiac.seoweek4.databinding.ActivityMainBinding
@@ -20,7 +21,9 @@ import java.util.Locale
 
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding:ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var appBarConfiguration: AppBarConfiguration
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -28,17 +31,34 @@ class MainActivity : AppCompatActivity() {
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
-        val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
-        val appBarConfiguration = AppBarConfiguration.Builder(navController.graph)
-            .setOpenableLayout(drawer)
-            .build()
 
-        toolbar.setupWithNavController(navController, appBarConfiguration)
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
         val navView = findViewById<NavigationView>(R.id.nav_view)
+
+        // Specify top-level destinations for AppBarConfiguration
+        appBarConfiguration = AppBarConfiguration(
+            setOf(R.id.dashboardFragment),
+            drawerLayout
+        )
+
+        // Setup toolbar with NavController and AppBarConfiguration
+        toolbar.setupWithNavController(navController, appBarConfiguration)
+
+        // Setup navigation UI with NavigationView
         NavigationUI.setupWithNavController(navView, navController)
+
+        // Setup ActionBar with NavController for proper back button handling
+        setupActionBarWithNavController(navController, appBarConfiguration)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment)
+        return navController.navigateUp(appBarConfiguration)
+                || super.onSupportNavigateUp()
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_toolbar, menu)
@@ -87,4 +107,18 @@ class MainActivity : AppCompatActivity() {
         val language = prefs.getString("My_Lang", "") ?: return
         switchLocale(language)
     }
+    override fun onBackPressed() {
+        val navHostFragment = supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        if (navController.currentDestination?.id != R.id.dashboardFragment) {
+            val navOptions = NavOptions.Builder()
+                .setPopUpTo(R.id.dashboardFragment, true)
+                .build()
+            navController.navigate(R.id.dashboardFragment, null, navOptions)
+        } else {
+            super.onBackPressed()
+        }
     }
+}
