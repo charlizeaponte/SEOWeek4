@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">spanish</string>
+    <string name="translated_hello">Hola</string>
+    <string name="translated_goodbye">Adios</string>
+    <string name="translated_please">Por favor</string>
+    <string name="translated_thank_you">Gracias</string>
+    <string name="translated_yes">Sí</string>
+    <string name="translated_no">No</string>
+    <string name="translated_how">¿Cómo estás?</string>
+    <string name="translated_sorry">Lo siento</string>
+    <string name="translated_your_name">¿Cómo te llamas?</string>
+    <string name="translated_my_name">Me llamo</string>
+    <string name="translated_one">Uno</string>
+    <string name="translated_two">Dos</string>
+    <string name="translated_three">Tres</string>
+    <string name="translated_four">Cuatro</string>
+    <string name="translated_five">Cinco</string>
+    <string name="translated_six">Seis</string>
+    <string name="translated_seven">Siete</string>
+    <string name="translated_eight">Ocho</string>
+    <string name="translated_nine">Nueve</string>
+    <string name="translated_ten">Diez</string>
+    <string name="translated_apple">Manzana</string>
+    <string name="translated_bread">Pan</string>
+    <string name="translated_cheese">Queso</string>
+    <string name="translated_chicken">Pollo</string>
+    <string name="translated_fish">Pescado</string>
+    <string name="translated_meat">Carne</string>
+    <string name="translated_milk">Leche</string>
+    <string name="translated_orange">Naranja</string>
+    <string name="translated_rice">Arroz</string>
+    <string name="translated_water">Agua</string>
+    <string name="translated_bicycle">Bicicleta</string>
+    <string name="translated_car">Coche</string>
+    <string name="translated_bus">Autobús</string>
+    <string name="translated_motorcycle">Motocicleta</string>
+    <string name="translated_airplane">Avión</string>
+    <string name="translated_train">Tren</string>
+    <string name="translated_boat">Barco</string>
+    <string name="translated_truck">Camión</string>
+    <string name="translated_helicopter">Helicóptero</string>
+    <string name="translated_subway">Metro</string>
+</resources>
