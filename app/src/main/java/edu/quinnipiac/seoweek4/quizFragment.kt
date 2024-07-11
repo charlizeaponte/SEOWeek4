@@ -5,55 +5,93 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [quizFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class quizFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var submitButton: Button
+    private lateinit var quizAdapter: QuizAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_quiz, container, false)
+        val rootView = inflater.inflate(R.layout.fragment_quiz, container, false)
+        initViews(rootView)
+        return rootView
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment quizFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            quizFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    private fun initViews(rootView: View) {
+        recyclerView = rootView.findViewById(R.id.recyclerView)
+        submitButton = rootView.findViewById(R.id.submitButton)
+
+
+        val quizQuestions = listOf(
+            QuizQuestion(
+                "How do you greet someone in a friendly way?",
+                getString(R.string.translated_goodbye),
+                getString(R.string.translated_hello),
+                getString(R.string.translated_please),
+                getString(R.string.translated_no),
+                getString(R.string.translated_hello) // Correct answer
+            ),
+            QuizQuestion(
+                "What do you call the liquid we drink to quench thirst?",
+                getString(R.string.translated_milk),
+                getString(R.string.translated_water),
+                getString(R.string.translated_rice),
+                getString(R.string.translated_bread),
+                getString(R.string.translated_water) // Correct answer
+            ),
+            QuizQuestion(
+                "How do you say 'five' in the language you're learning?",
+                getString(R.string.translated_five),
+                getString(R.string.translated_two),
+                getString(R.string.translated_three),
+                getString(R.string.translated_ten),
+                getString(R.string.translated_five) // Correct answer
+            ),
+            QuizQuestion(
+                "What do you call a vehicle with two wheels that people pedal?",
+                getString(R.string.translated_car),
+                getString(R.string.translated_bus),
+                getString(R.string.translated_bicycle),
+                getString(R.string.translated_airplane),
+                getString(R.string.translated_bicycle) // Correct answer
+            ),
+            QuizQuestion(
+                "How do you express gratitude?",
+                getString(R.string.translated_please),
+                getString(R.string.translated_thank_you),
+                getString(R.string.translated_sorry),
+                getString(R.string.translated_yes),
+                getString(R.string.translated_thank_you) // Correct answer
+            )
+        )
+
+        // Initialize RecyclerView and set adapter
+        quizAdapter = QuizAdapter(quizQuestions)
+        recyclerView.adapter = quizAdapter
+        recyclerView.layoutManager = LinearLayoutManager(context)
+
+        // Set click listener for submit button
+        submitButton.setOnClickListener {
+            calculateScore(quizQuestions)
+        }
+    }
+
+    private fun calculateScore(quizQuestions: List<QuizQuestion>) {
+        var score = 0
+        for (question in quizQuestions) {
+            if (question.selectedAnswer == question.correctAnswer) {
+                score++
             }
+        }
+        // Display the score
+        Toast.makeText(context, "Your score is $score out of ${quizQuestions.size}", Toast.LENGTH_LONG).show()
     }
 }
