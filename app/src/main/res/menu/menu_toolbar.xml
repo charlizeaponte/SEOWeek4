@@ -8,7 +8,7 @@
     <item
         android:id="@+id/action_translate_fr"
         android:title="French"
-        android:showAsAction="never" />
+        app:showAsAction="never" />
     <item
         android:id="@+id/action_translate_de"
         android:title="German"
