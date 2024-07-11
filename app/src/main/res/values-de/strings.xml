@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Learning Languages</string>
+    <string name="translated_hello">Hallo</string>
+    <string name="translated_goodbye">Auf Wiedersehen</string>
+    <string name="translated_please">Bitte</string>
+    <string name="translated_thank_you">Danke</string>
+    <string name="translated_yes">Ja</string>
+    <string name="translated_no">Nein</string>
+    <string name="translated_how">Wie geht\'s?</string>
+    <string name="translated_sorry">Es tut mir leid</string>
+    <string name="translated_your_name">Wie heißt du?</string>
+    <string name="translated_my_name">Ich heiße</string>
+    <string name="translated_one">Eins</string>
+    <string name="translated_two">Zwei</string>
+    <string name="translated_three">Drei</string>
+    <string name="translated_four">Vier</string>
+    <string name="translated_five">Fünf</string>
+    <string name="translated_six">Sechs</string>
+    <string name="translated_seven">Sieben</string>
+    <string name="translated_eight">Acht</string>
+    <string name="translated_nine">Neun</string>
+    <string name="translated_ten">Zehn</string>
+    <string name="translated_apple">Apfel</string>
+    <string name="translated_bread">Brot</string>
+    <string name="translated_cheese">Käse</string>
+    <string name="translated_chicken">Hähnchen</string>
+    <string name="translated_fish">Fisch</string>
+    <string name="translated_meat">Fleisch</string>
+    <string name="translated_milk">Milch</string>
+    <string name="translated_orange">Orange</string>
+    <string name="translated_rice">Reis</string>
+    <string name="translated_water">Wasser</string>
+    <string name="translated_bicycle">Fahrrad</string>
+    <string name="translated_car">Auto</string>
+    <string name="translated_bus">Bus</string>
+    <string name="translated_motorcycle">Motorrad</string>
+    <string name="translated_airplane">Flugzeug</string>
+    <string name="translated_train">Zug</string>
+    <string name="translated_boat">Boot</string>
+    <string name="translated_truck">Lastwagen</string>
+    <string name="translated_helicopter">Hubschrauber</string>
+    <string name="translated_subway">U-Bahn</string>
+</resources>

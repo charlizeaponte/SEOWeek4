@@ -1,8 +1,96 @@
 <resources>
     <string name="app_name">Learning Languages</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="appTitle">Learning Languages</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appTitle" translatable="false">Learning Languages</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <string name="english_hello" translatable="false">Hello</string>
+    <string name="english_goodbye" translatable="false">Goodbye</string>
+    <string name="english_please" translatable="false">Please</string>
+    <string name="english_thank_you" translatable="false">Thank you</string>
+    <string name="english_yes" translatable="false">Yes</string>
+    <string name="english_no" translatable="false">No</string>
+    <string name="english_how" translatable="false">How are you?</string>
+    <string name="english_sorry" translatable="false">Sorry</string>
+    <string name="english_your_name" translatable="false">What is your name?</string>
+    <string name="english_my_name" translatable="false">My name is</string>
+
+    <string name="english_one" translatable="false">One</string>
+    <string name="english_two" translatable="false">Two</string>
+    <string name="english_three" translatable="false">Three</string>
+    <string name="english_four" translatable="false">Four</string>
+    <string name="english_five" translatable="false">Five</string>
+    <string name="english_six" translatable="false">Six</string>
+    <string name="english_seven" translatable="false">Seven</string>
+    <string name="english_eight" translatable="false">Eight</string>
+    <string name="english_nine" translatable="false">Nine</string>
+    <string name="english_ten" translatable="false">Ten</string>
+
+    <string name="english_apple" translatable="false">Apple</string>
+    <string name="english_bread" translatable="false">Bread</string>
+    <string name="english_cheese" translatable="false">Cheese</string>
+    <string name="english_chicken" translatable="false">Chicken</string>
+    <string name="english_fish" translatable="false">Fish</string>
+    <string name="english_meat" translatable="false">Meat</string>
+    <string name="english_milk" translatable="false">Milk</string>
+    <string name="english_orange" translatable="false">Orange</string>
+    <string name="english_rice" translatable="false">Rice</string>
+    <string name="english_water" translatable="false">Water</string>
+
+    <string name="english_bicycle" translatable="false">Bicycle</string>
+    <string name="english_car" translatable="false">Car</string>
+    <string name="english_bus" translatable="false">Bus</string>
+    <string name="english_motorcycle" translatable="false">Motorcycle</string>
+    <string name="english_airplane" translatable="false">Airplane</string>
+    <string name="english_train" translatable="false">Train</string>
+    <string name="english_boat" translatable="false">Boat</string>
+    <string name="english_truck" translatable="false">Truck</string>
+    <string name="english_helicopter" translatable="false">Helicopter</string>
+    <string name="english_subway" translatable="false">Subway</string>
+
+
+    <!-- Translated -->
+    <string name="translated_hello">Hello</string>
+    <string name="translated_goodbye">Goodbye</string>
+    <string name="translated_please">Please</string>
+    <string name="translated_thank_you">Thank you</string>
+    <string name="translated_yes">Yes</string>
+    <string name="translated_no">No</string>
+    <string name="translated_how">How are you?</string>
+    <string name="translated_sorry">Sorry</string>
+    <string name="translated_your_name">What is your name?</string>
+    <string name="translated_my_name">My name is</string>
+
+    <string name="translated_one">One</string>
+    <string name="translated_two">Two</string>
+    <string name="translated_three">Three</string>
+    <string name="translated_four">Four</string>
+    <string name="translated_five">Five</string>
+    <string name="translated_six">Six</string>
+    <string name="translated_seven">Seven</string>
+    <string name="translated_eight">Eight</string>
+    <string name="translated_nine">Nine</string>
+    <string name="translated_ten">Ten</string>
+
+    <string name="translated_apple">Apple</string>
+    <string name="translated_bread">Bread</string>
+    <string name="translated_cheese">Cheese</string>
+    <string name="translated_chicken">Chicken</string>
+    <string name="translated_fish">Fish</string>
+    <string name="translated_meat">Meat</string>
+    <string name="translated_milk">Milk</string>
+    <string name="translated_orange">Orange</string>
+    <string name="translated_rice">Rice</string>
+    <string name="translated_water">Water</string>
+
+    <string name="translated_bicycle">Bicycle</string>
+    <string name="translated_car">Car</string>
+    <string name="translated_bus">Bus</string>
+    <string name="translated_motorcycle">Motorcycle</string>
+    <string name="translated_airplane">Airplane</string>
+    <string name="translated_train">Train</string>
+    <string name="translated_boat">Boat</string>
+    <string name="translated_truck">Truck</string>
+    <string name="translated_helicopter">Helicopter</string>
+    <string name="translated_subway">Subway</string>
 
 </resources>

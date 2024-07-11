@@ -2,12 +2,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_spanish"
-        android:title="Spanish" />
+        android:id="@+id/action_translate_es"
+        android:title="Spanish"
+        android:showAsAction="never" />
     <item
-        android:id="@+id/action_italian"
-        android:title="Italian" />
+        android:id="@+id/action_translate_fr"
+        android:title="French"
+        app:showAsAction="never" />
     <item
-        android:id="@+id/action_german"
-        android:title="German" />
+        android:id="@+id/action_translate_de"
+        android:title="German"
+        android:showAsAction="never" />
 </menu>

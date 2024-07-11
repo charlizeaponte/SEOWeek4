@@ -1,19 +1,22 @@
 package edu.quinnipiac.seoweek4
 
+import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import edu.quinnipiac.seoweek4.databinding.ActivityMainBinding
+import android.view.Menu
+import android.view.MenuItem
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.navigation.ui.NavigationUI
 import com.google.android.material.navigation.NavigationView
+import edu.quinnipiac.seoweek4.databinding.ActivityMainBinding
+import java.util.Locale
 
 
 class MainActivity : AppCompatActivity() {
@@ -45,5 +48,43 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         return item.onNavDestinationSelected(navController)
                 || super.onOptionsItemSelected(item)
+    }
+
+    override fun onPrepareOptionsMenu(menu: Menu): Boolean {
+        menu.findItem(R.id.action_translate_es)?.setOnMenuItemClickListener {
+            switchLocale("es")
+            true
+        }
+        menu.findItem(R.id.action_translate_fr)?.setOnMenuItemClickListener {
+            switchLocale("fr")
+            true
+        }
+        menu.findItem(R.id.action_translate_de)?.setOnMenuItemClickListener {
+            switchLocale("de")
+            true
+        }
+        return super.onPrepareOptionsMenu(menu)
+    }
+
+    private fun switchLocale(langCode: String) {
+        val locale = Locale(langCode)
+        Locale.setDefault(locale)
+        val config = resources.configuration
+        config.setLocale(locale)
+        resources.updateConfiguration(config, resources.displayMetrics)
+
+        // Save the selected locale
+        val editor = getSharedPreferences("Settings", MODE_PRIVATE).edit()
+        editor.putString("My_Lang", langCode)
+        editor.apply()
+
+        // Recreate the activity's content to apply the new locale
+        recreate()
+    }
+
+    private fun loadLocale() {
+        val prefs = getSharedPreferences("Settings", MODE_PRIVATE)
+        val language = prefs.getString("My_Lang", "") ?: return
+        switchLocale(language)
     }
     }
