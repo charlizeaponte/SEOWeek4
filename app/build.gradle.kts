@@ -54,6 +54,8 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth")
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    implementation(libs.firebase.firestore.ktx)
     testImplementation(libs.junit)
     androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
     androidTestImplementation("junit:junit:4.13.2")
