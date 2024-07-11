@@ -7,8 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.coroutines.launch
 
 class quizFragment : Fragment() {
 
@@ -89,6 +91,13 @@ class quizFragment : Fragment() {
         for (question in quizQuestions) {
             if (question.selectedAnswer == question.correctAnswer) {
                 score++
+            }
+        }
+        val userData = UserData
+        lifecycleScope.launch {
+            val currSore = userData.getProgress(requireContext(), 1)
+            if (currSore < score.toDouble() / quizQuestions.size) {
+                userData.setProgress(requireContext(), 1, score.toDouble() / quizQuestions.size)
             }
         }
         // Display the score
